@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team-card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Caveat&family=Cinzel&family=Dela+Gothic+One&family=Fjalla+One&family=Indie+Flower&family=Kanit:ital@1&family=Oswald&family=Roboto&family=Ubuntu:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Caveat&family=Cinzel&family=Dela+Gothic+One&family=Fjalla+One&family=Indie+Flower&family=Kanit:ital@1&family=Oswald&family=Roboto&family=Signika&family=Ubuntu:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    background-image: url(/background-realistic-abstract-technology-particle_23-2148431735.avif);
+}
+.Header{
+    display: flex;
+    margin: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    position: sticky;
+    top: 1px;
+    text-align: center;
+    
+}
+.LOGO{
+    color: rgb(211, 139, 44);
+    font-family: 'Abril Fatface', serif;
+    font-size: 30px;
+    align-content: center;
+    margin: 10px;
+    
+}
+.Navigation{
+
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    
+}
+.home, .more, .about-us{
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+button{
+    margin-left: auto;
+    text-decoration: none;
+    
+    height: 40px;
+    border-radius: 10px;
+    color: #090909;
+    transition: transform(1sec ease-in-out);
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 0 0 5px #c1c125;
+    transform: scale(1.05);
+}
+
+.Sign-in a{
+    text-decoration: none;
+}
+.container-wrapper{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+
+    justify-content: center;
+
+}
+.container{
+   display: flex;
+   border-radius: 30px;
+    background-color: aquamarine;
+    height: auto;
+    justify-content: center;
+
+}
+
+.Profile-Image {
+    display: flex;
+    align-items: center;
+}
+
+.Profile-Image img{
+    margin: 30px;
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 100%;
+    max-height: 250px;
+    height: 150px;
+    cursor: pointer;
+    transition: transform(0.5 ease-in-out);
+    
+object-fit: cover;
+    border-radius: 20px;
+    border-top: 5px solid #3b3838;
+   
+}
+
+.Profile-Image:hover img{
+    box-shadow: 0 0 5px black;
+    transform: scale(1.05);
+}
+
+.about{
+    width:100%;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    line-height:15px;
+    margin-top: 25px;
+
+    
+}
+.first-line{
+   
+    font-family: 'Signika', sans-serif;
+    font-size:20px;
+    margin-bottom: 10px;
+    
+}
+.Name{
+    margin:0;
+     font-size: 30px;
+    font-weight: bold;
+    color: rgb(146, 94, 32);
+}
+    
+.info {
+    
+    width: 400px;
+    margin-bottom: 20px;
+
+}
+
+.socials img{
+    display: inline-block
+    grid-template-columns: repeat(3 1fr);
+    width:30px;
+    
+    height: 30px;
+    margin-right:20px;
+    cursor: pointer;
+    border-radius: 15px
+
+}
+.socials img:hover {
+    box-shadow: 0 0 3px black;
+    transform: scale(1.05);
+}
+
+.Linkedin-logo {
+
+
+}
+.form{
+    text-decoration: none;
+}
+   
+
+</style>
+</head>
+<body>
+    <div class="Header">
+        <span class="LOGO">
+            TEAM CARD
+        </span>
+        <span class="Navigation">
+            <li class="home">Home</li>
+            <li class="more">More</li>
+            <li class="about-us">About us</li>
+        </span>
+            <button class="Sign-in"><a href="/forms.html" target="_blank">Sign in</a></button>
+
+          
+    </div>
+    <div class="container-wrapper">
+    <div class="container">
+        <div class="Profile-Image">
+            <img src="/WhatsApp Image 2023-12-21 at 2.12.24 PM.jpeg" alt="profile_image">
+        </div>
+        <div class="about">
+            <p class="first-line">Hi, I'm</p>
+            <p class="Name">Thippesh</p>
+            <p class="info">I'm a professional web developer.Our main goal is to help and satisfiy local and global clients.</p>
+            <div class="socials">
+
+                <img class="Linkedin-logo"  src="/linked.png" alt="Linkedin-logo">
+                <img src="/github-mark.png" alt="git-hub">
+                <img src="/Facebook_Logo_2023.png" alt="facebook">
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="Profile-Image">
+            <img src="/random1.jpg" alt="profile_image">
+        </div>
+        <div class="about">
+            <p class="first-line">Hi, I'm</p>
+            <p class="Name">John</p>
+            <p class="info">I'm a professional web developer.Our main goal is to help and satisfiy local and global clients.</p>
+            <div class="socials">
+
+                <img class="Linkedin-logo"  src="/linked.png" alt="Linkedin-logo">
+                <img src="/github-mark.png" alt="git-hub">
+                <img src="/Facebook_Logo_2023.png" alt="facebook">
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="container-wrapper">
+    <div class="container">
+        <div class="Profile-Image">
+            <img src="/random2.jpg" alt="profile_image">
+        </div>
+        <div class="about">
+            <p class="first-line">Hi, I'm</p>
+            <p class="Name">Adam</p>
+            <p class="info">I'm a professional web developer.Our main goal is to help and satisfiy local and global clients.</p>
+            <div class="socials">
+
+                <img class="Linkedin-logo"  src="/linked.png" alt="Linkedin-logo">
+                <img src="/github-mark.png" alt="git-hub">
+                <img src="/Facebook_Logo_2023.png" alt="facebook">
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="Profile-Image">
+            <img src="/random9.avif" alt="profile_image">
+        </div>
+        <div class="about">
+            <p class="first-line">Hi, I'm</p>
+            <p class="Name">Alex</p>
+            <p class="info">I'm a professional web developer.Our main goal is to help and satisfiy local and global clients.</p>
+            <div class="socials">
+
+                <img class="Linkedin-logo"  src="/linked.png" alt="Linkedin-logo">
+                <img src="/github-mark.png" alt="git-hub">
+                <img src="/Facebook_Logo_2023.png" alt="facebook">
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
