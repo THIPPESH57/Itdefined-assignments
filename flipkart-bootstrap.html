@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart.com</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+    body{
+        background-color: rgb(253, 253, 244);
+    }
+    .Navbar{
+        justify-content: center;
+        display: flex;
+        margin-right: 0;
+        
+    }
+    .logo{
+        margin-left: 100px;
+    }
+    .search-area {
+    flex: 1; /* This will make the search area take up all available space */
+    justify-content: center;
+}
+
+.search-box {
+    
+    width: 100%;
+    max-width: 600px; /* Adjust the width as needed */
+}
+
+    .button{
+        margin-left: 10px;
+        width: 100px;
+    }
+    .navigation{
+        margin-left: auto;
+    
+    }
+    .item{
+        text-align: center;
+        padding-top: 10px;
+    }
+    .login-form{
+       
+        
+        display: flex;
+            justify-content: center;
+            
+    }
+    .email{
+        width:80%;
+        margin-top: 50px;
+        border:none;
+         border-bottom: 2px solid #7f7c7c;
+         margin-left: 50px;
+    justify-content: center;
+    }
+    .login{
+       
+        min-height: 100vh;
+    }
+.otp-form{
+    
+    margin-left: 20px;
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    box-shadow: 0 0 5px black;
+    max-height: 400px;
+}
+.generate-otp{
+    margin-top:20px;
+    width: 80%;
+    margin-left: 50px;
+    justify-content: center;
+}
+.t-c{
+    font-size: 13px;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding-top: 10px;
+
+}
+.blue-form {
+    box-shadow: 0 0 3px black;
+    display: block;
+    margin-left: 30px;
+   
+    max-height: 400px;
+}
+.LOG{
+    margin:20px;
+    font-size: 30px;
+}
+.info{
+    
+        width: 300px;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+</style>
+</head>
+<body>
+    
+   <nav class="navbar navbar-expand-lg navbar-primary bg-primary Navbar">
+    <a class="navbar-brand text-light fst-italic fs-3 mx-2 logo" href="#">Flipkart</a>
+    <form class="d-flex search-area ">
+        <input  class="form-control search-box" aria-label="search" type="search" placeholder="Search for products,brands and more">
+        <button class="button btn btn-light btn-outline-success text-primary fw-bold" type="submit">Login</button>
+    </form>
+    <ul class="navbar-nav navigation">
+        <li class="nav-item">
+            <a class="nav-link fw-bold text-light" href="#">Become a Seller</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-light fw-bold" href="#" id="Navbardropdown" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+                More
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="Navbardropdown">
+                <li><a class="dropdown-item" href="#">Notification preference</a></li>
+                <li><a  class="dropdown-item" href"#">24x7 Customer care support</a></li>
+                <li><a class="dropdown-item" href="">Download app</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link fw-bold text-light my-cart" href="#">My Cart</a>
+        </li>
+    </ul>
+
+    
+   </nav>
+
+
+   <nav class="border border-bottom border-dark text-align-center bg-light item">
+    <div class="row">
+        <div class="col-md-2">
+            <p class="text-start">Electronics</p>
+        </div>
+        <div class="col-md-2">
+            <p>TVs & Appliances</p>
+        </div>
+        <div class="col-md-2">
+            <p>Men</p>
+        </div>
+        <div class="col-md-2">
+            <p>Women</p>
+        </div>
+        <div class="col-md-2">
+            <p>Kids</p>
+        </div>
+        <div class="col-md-2">
+            <p>Offer Zone</p>
+        </div>
+    </div>
+   </nav>
+
+   <div class="container login-form mt-4">
+     <div class="row bg-primary blue-form">
+        <div class="justify-content-center col-lg-3 text-light mt-3 ">
+            <p class="LOG fw-bold">Login</p>
+
+            <div class="info">Get access to your Orders, Wishlist and Recommendations</div>
+        </div>
+
+       
+     
+      </div>
+    <div class="otp-form">
+        <form class="login">
+            <input class="form-control email" type="text" aria-label="text" placeholder="Enter your email/phone number">
+         <div class="t-c"><span>By continuing, you agree to Flipkart's</span> <span class="text-info"> Terms of Use and Privacy Policy.</span>
+         </div>
+            <button class="d-flex btn btn-danger generate-otp" type="submit">Generate OTP</button>
+        </form>
+   
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
