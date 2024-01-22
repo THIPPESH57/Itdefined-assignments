@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube-bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+        }
+        .conatiner{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+           margin:0px;
+           background-color: black;
+           padding: 10px;
+           
+
+        }
+        .logo img{
+            width: 100%;
+            max-width: 100px;
+        }
+        .search-box{
+            text-align: center;
+           margin-left: 40px;
+            width: 100%;
+            max-width: 600px;
+        }
+        .search-area{
+            text-align: center;
+            margin: 0 auto;
+        }
+        .search{
+            
+            width: 80%;
+            max-width: 600px;
+            padding: 8px;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 5px;
+        }
+        .searchnow{
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .nav{
+            display: flex;
+            list-style:none;
+          
+            text-decoration: none;
+        }
+        li{
+            margin-right: 10px;
+            text-decoration: none;
+            font-style: none;
+            margin-top: 10px;
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+            padding-right: 10px;
+            margin-bottom: 20px;
+        }
+        .drop-down{
+        padding-bottom: 10px;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+          
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="/youtube1.png" alt=""></a>
+
+        </div>
+        <div class="search-box">
+            <form class=" d-flex justify-content-center ms-2">
+                <input class="search" type="text" placeholder="search videos,songs and much more.....">
+                <button class="searchnow ms-3" type="submit">search</button>
+            </form>
+        </div>
+
+        <div class="navigation">
+           <ul class="nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle drop-down" id="Navbardropdown" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+                    More
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="Navbardropdown">
+                    <li><a class="dropdown-item" href="#">Notification preference</a></li>
+                <li><a class="dropdown-item" href="#">Customer care support</a></li>
+                <li><a class="dropdown-item" href="">Download app</a></li>
+                </ul>
+            </li>
+            <li ><a href="#">Home</a></li>
+            <li><a href="#">Shorts</a></li>
+            <li><a href="#">Subscriptions</a></li>
+            <li><a href="#">You</a></li>
+           </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card">
+                    <iframe class="card-img-top" width="400" height="315" src="https://www.youtube.com/embed/c8r6oiIDV9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="card-body">
+                        <h4 class="card-title text-dark fw-bold">Little boy laughing</h4>
+                        <p class="card-text text-dark">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <iframe class="card-img-top" width="400" height="315" src="https://www.youtube.com/embed/Vr6qsllIK84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="card-body">
+                        <h4 class="card-title text-dark fw-bold">Sidemen Sunday</h4>
+                        <p class="card-text text-dark">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
