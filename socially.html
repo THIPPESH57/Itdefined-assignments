@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socially</title>
+
+    <style>
+        @media screen and (max-width: 1024px){
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        .hero{
+            width: 80%;
+            min-height: 100vh;
+            background-image: url(/back-image.png);
+            background-position: center;
+            background-size: cover;
+            padding: 10px 10%;
+            overflow: hidden;
+            position: relative;
+        }
+        nav{
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo{
+            width: 140px;
+        }
+        nav ul li{
+            display: inline-block;
+            list-style:none;
+            margin: 10px 15px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: brown;
+            font-weight: bold;
+        }
+        .login-btn{
+            text-decoration: none;
+            color: #333;
+            margin-right: 15px;
+        }
+        .btn{
+            display: inline-block;
+            text-decoration: none;
+            padding: 14px 40px;
+            color: #fff;
+            background-image: linear-gradient(45deg, #df4881, #c430d7);
+            border-radius: 30px;
+            border-top-right-radius: 0;
+            transition: 0.5s;
+        }
+        .content{
+            margin-top: 10%;
+            max-width: 600px;
+        }
+        .content h1{
+            font-size: 70px;
+            color: #222;
+        }
+        .content p{
+            margin: 10px 0 30px;
+            color: #333;
+        }
+        .content .btn{
+            padding: 15px 80px;
+            font-size: 16px;
+        }
+        .btn:hover{
+            border-top-right-radius: 30px;
+            border-bottom-left-radius: 0;
+        }
+        .feature-image{
+            width: 400px;
+            
+            position: absolute;
+            bottom: 0;
+            right: 10%;
+        }
+        .feature-image img{
+            display: block;
+            
+
+        }
+        .anim{
+            opacity:0;
+            transform: translateY(30px);
+            animation: moveup 0.5s linear forwards;
+        }
+        @keyframes moveup{
+            100%{
+                opacity:1;
+                transform: rotateY(0);
+            }
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+        <img src="/logo.png" alt="logo" class="logo">
+        <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">How it works</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Careers</a></li>
+        </ul>
+        <div>
+            <a href="#" class="login-btn">Log in</a>
+            <a href="#" class="btn">Download</a>
+        </div>
+    </nav>
+    <div class="content">
+        <h1 class="anim">Make <br>New Friends</h1>
+        <p class="anim">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corrupti quam minima tempore repellat assumenda! Quibusdam recusandae praesentium debitis dicta.</p>
+        <a href="#" class="btn anim">Join now</a>
+    </div>
+    <img src="/pic.png" alt="feature" class="feature-image anim">
+    </div>
+</body>
+</html>
