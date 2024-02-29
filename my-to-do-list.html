@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        @keyframes black{
+            0%{background-color: rgb(255, 255, 255);}
+            100%{background-color: black;}
+        }
+
+        .theme{
+            animation: black ease-in-out forwards;
+        }
+
+
+
+    </style>
+</head>
+<body class="dark">
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="d-flex justify-content-center text-light bg-dark">MY TO DO LIST</h3>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="input" placeholder="Enter item">
+                    <button class="btn btn-primary dark" onclick="add()">ADD</button>
+                    
+                </div>
+                <form action="" class="form-control">
+                    <ol class="list-group list-group-numbered dark" id="list"></ol>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+<script>
+  function add(){
+    let input = document.getElementById('input')
+    let text = input.value;
+
+    if(text !== ''){
+        let list = document.getElementById('list')
+        let item = document.createElement('li');
+        item.innerHTML= text;
+        item.className = 'list-group-item fw-bold'
+
+        let edit = document.createElement('button')
+        edit.innerHTML = 'edit'
+        edit.className = 'btn btn-primary btn-sm ms-5'
+
+        edit.onclick = function(){
+            let newinput = prompt('enter new task', text)
+           
+             if(newinput === ''){
+                alert('please enter the valid task!!')
+            }
+            else if(newinput !==  null){
+               item.innerHTML = newinput
+            }
+            
+        }
+
+        // adding delete button
+
+        let deletebutton = document.createElement('input')
+      
+        deletebutton.className = 'form-check-input ms-3'
+        deletebutton.type = 'checkbox'
+        deletebutton.onclick = function(){
+            item.remove();
+            updatedcount(-1)
+        }
+        
+// linking elements together
+        
+        item.appendChild(deletebutton);
+        item.appendChild(edit)
+        list.appendChild(item);
+        input.value =''
+        updatedcount(1)
+    }else{
+        alert('please enter the things to continue')
+    }
+function updatedcount(change){
+    count += change;
+    document.getElementById('count').innerHTML = count
+}
+
+  }
+
+
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
